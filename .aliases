@@ -1,0 +1,10 @@
+alias windows="sudo /opt/scripts/./bootWindows.sh"
+alias jcsc="/home/ireq/.dodatki/jcsc/bin/./jcsc.sh"
+alias glasfish="/home/ireq/.dodatki/java-servers/glassfish5/bin/./asadmin"
+alias glasfish-start="glasfish start-domain"
+alias glasfish-stop="glasfish stop-domain"
+alias glasfish-admin="xdg-open http://localhost:4848"
+alias glasfish-kill="lsof -n -i4TCP:4848 | grep LISTEN | awk '{ print $2 }' | xargs -r kill -9"
+alias glasfish-restart="glasfish-kill && glasfish-start"
+alias plagiat="/home/ireq/.dodatki/pmd/bin/./run.sh cpdgui &"
+
